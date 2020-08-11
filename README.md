@@ -3,6 +3,9 @@
 
 In this project we will create a custom op that isn't covered by existing Tensorflow Library. Following project is created by following instructions provided by [Tensorflow](https://www.tensorflow.org/), in the [Create an op](https://www.tensorflow.org/guide/create_op) page.
 
+For further instruction, please refer to [Create an op](https://www.tensorflow.org/guide/create_op) page.
+
+
 [Prerequisites](#Prerequisites)
 ---
 ### Tensor Addition Op
