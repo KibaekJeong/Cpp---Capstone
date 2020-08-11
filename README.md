@@ -5,8 +5,6 @@ In this project we will create a custom op that isn't covered by existing Tensor
 
 For further instruction, please refer to [Create an op](https://www.tensorflow.org/guide/create_op) page.
 
-
-[Prerequisites](#Prerequisites)
 ---
 ### Tensor Addition Op
 Addition op is an op that gets two tensors as input and outputs a tensor that is summation of input tensors.
