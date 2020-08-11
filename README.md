@@ -26,19 +26,19 @@ Output tensor c is summation of input tensor a and b.
 ### Project structure
 - customAdd.cc
 
-&#8594; code of custom Addition op
+  &#8594; code of custom Addition op
 - custom_kernel.cu.cc
 
-&#8594; Specialization for the GPU device defined
+  &#8594; Specialization for the GPU device defined
 - custom_kernel.h
 
-&#8594; header file for customAdd op
+  &#8594; header file for customAdd op
 - customAdd.so
 
-&#8594; Shared library created after customAdd.cc is built
+  &#8594; Shared library created after customAdd.cc is built
 - customAdd_test.py
 
-&#8594; File for checking whether customAdd op is working  properly
+  &#8594; File for checking whether customAdd op is working  properly
 
 
 ---
