@@ -23,6 +23,20 @@ struct AdditionFunctor<CPUDevice,T>{
 Output tensor c is summation of input tensor a and b.
 
 ---
+### Project structure
+- customAdd.cc
+* code of custom Addition op
+- custom_kernel.cu.cc
+* Specialization for the GPU device defined
+- custom_kernel.h
+* header file for customAdd op
+- customAdd.so
+* Shared library created after customAdd.cc is built
+- customAdd_test.py
+* File for checking whether customAdd op is working  properly
+
+
+---
 ### Building the op Library
 First of all, using python, we will get the header directory and the get_lib directory.
 ```
@@ -44,7 +58,7 @@ g++ -std=c++11 -shared zero_out.cc -o zero_out.so -fPIC ${TF_CFLAGS[@]} ${TF_LFL
 * Note on gcc version >=5: gcc uses the new C++ ABI since version 5. The binary pip packages available on the TensorFlow website are built with gcc4 that uses the older ABI. If you compile your op library with gcc>=5, add -D_GLIBCXX_USE_CXX11_ABI=0 to the command line to make the library compatible with the older abi.
 
 #### Compile with GPU Device
-Using CUDA kernel to implement op. 
+Using CUDA kernel to implement op.
 ```
 nvcc -std=c++11 -c -o cuda_op_kernel.cu.o cuda_op_kernel.cu.cc \
   ${TF_CFLAGS[@]} -D GOOGLE_CUDA=1 -x cu -Xcompiler -fPIC
@@ -58,17 +72,16 @@ Compile with testing file in python code.
 ```
 python customAdd_test.py
 ```
-When operation is successfully done, you will see 
+When operation is successfully done, you will see
 ```
 Operation Successful!
 ```
 ---
-### Testing Result 
+### Testing Result
 
 ![output](./image/output.png)
 ---
 ### Prerequisites
 - [Tensorflow binary](https://www.tensorflow.org/install)
-- g++ 
+- g++
 - CUDA if running with GPU Device
-
