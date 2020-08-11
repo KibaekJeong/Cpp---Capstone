@@ -25,7 +25,7 @@ Output tensor c is summation of input tensor a and b.
 ---
 ### Project structure
 - customAdd.cc
---> code of custom Addition op
+&#8594; code of custom Addition op
 - custom_kernel.cu.cc
 --> Specialization for the GPU device defined
 - custom_kernel.h
