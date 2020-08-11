@@ -25,15 +25,15 @@ Output tensor c is summation of input tensor a and b.
 ---
 ### Project structure
 - customAdd.cc
-code of custom Addition op
+--> code of custom Addition op
 - custom_kernel.cu.cc
-Specialization for the GPU device defined
+--> Specialization for the GPU device defined
 - custom_kernel.h
-header file for customAdd op
+--> header file for customAdd op
 - customAdd.so
-Shared library created after customAdd.cc is built
+--> Shared library created after customAdd.cc is built
 - customAdd_test.py
-File for checking whether customAdd op is working  properly
+--> File for checking whether customAdd op is working  properly
 
 
 ---
