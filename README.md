@@ -90,3 +90,22 @@ Operation Successful!
 - [Tensorflow binary](https://www.tensorflow.org/install)
 - g++
 - CUDA if running with GPU Device
+---
+### Project Specification
+#### README
+- A README with instructions is included with the project
+- The README indicates which project is chosen.
+- The README includes information about each rubric point addressed.
+#### Compiling and Testing
+- The submission must compile and run.
+#### Loops, Functions, I/O
+- The project demonstrates an understanding of C++ functions and control structures.
+- The project reads data from a file and process the data, or the program writes data to a file.
+#### Object Oriented Programming
+- The project uses Object Oriented Programming techniques.
+- Classes abstract implementation details from their interfaces.
+- Classes encapsulate behavior.
+- Classes follow an appropriate inheritance hierarchy.
+- Overloaded functions allow the same function to operate on different parameters.
+- Derived class functions override virtual base class functions.
+- Templates generalize functions in the project.
