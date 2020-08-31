@@ -1,4 +1,4 @@
-# Cpp-Capstone (Tensorflow Custom Op) Project
+# CppND-Capstone (Tensorflow Custom Op) Project
 ---
 
 In this project we will create a custom op that isn't covered by existing Tensorflow Library. Following project is created by following instructions provided by [Tensorflow](https://www.tensorflow.org/), in the [Create an op](https://www.tensorflow.org/guide/create_op) page.
